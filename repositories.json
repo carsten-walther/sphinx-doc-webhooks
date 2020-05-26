@@ -1,0 +1,11 @@
+{
+    "carsten-walther/jira_service_desk": {
+        "path": ".",
+        "action": [
+            ["mkdir", "-p", "./docs/carsten-walther/jira_service_desk"],
+            ["git", "clone", "https://github.com/carsten-walther/jira_service_desk.git", "./temp/carsten-walther/jira_service_desk"],
+            ["sphinx-build", "-c", "./sphinx", "-b", "html", "./temp/carsten-walther/jira_service_desk/Documentation", "./docs/carsten-walther/jira_service_desk"],
+            ["rm", "-rf", "./temp/carsten-walther"]
+        ]
+    }
+}
